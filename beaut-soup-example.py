@@ -58,3 +58,10 @@ def getImages():
 if __name__ == "__main__":
     getImages()
     
+"""
+NOTES:
+for ana in soup.findAll('a'):       ## search in a parent tag to find sub tag a 
+	if ana.parent.name == 'span': 
+		#print(ana.text)            ## print the text in the tag ie: <a>this is the text</a>
+		#print('####################')
+		result = re.search('(\d+)\.(\S+)$', str(ana.text))  ## search file name [0-9].[a-z]
