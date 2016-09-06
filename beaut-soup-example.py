@@ -17,9 +17,9 @@ try:
 except:
     os.mkdir(subdir)
 
-def getLinks():
+def getThumbs():
     """
-    just pull the links with this code :
+    just pull the Thumbs with this code :
     """
     for x in soup.findAll('img'):
         try:
